@@ -33,7 +33,7 @@
 }
 
 .navbar-logo h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
@@ -67,7 +67,7 @@
 }
 
 .navbar-menu button.early-access {
-  background-color: #1B4332;
+  background-color: #732781;
   color: white;
   padding: 8px 16px;
   border-radius: 20px;

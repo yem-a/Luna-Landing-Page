@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Features.css';
 import initiativeTracking from '../images/initiative-tracking.png';
 import employeePulse from '../images/employee-pulse.png';
@@ -6,15 +6,29 @@ import aiInsights from '../images/ai-insights.png';
 
 const Feature = ({ title, description, image }) => {
   const [enlarged, setEnlarged] = useState(false);
+  const imageRef = useRef(null);
 
   const handleImageClick = (e) => {
     e.stopPropagation();
-    setEnlarged(true);
+    setEnlarged(!enlarged);
   };
 
-  const handleCloseClick = () => {
-    setEnlarged(false);
+  const handleClickOutside = (e) => {
+    if (imageRef.current && !imageRef.current.contains(e.target)) {
+      setEnlarged(false);
+    }
   };
+
+  useEffect(() => {
+    if (enlarged) {
+      document.addEventListener('click', handleClickOutside);
+    } else {
+      document.removeEventListener('click', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [enlarged]);
 
   return (
     <div className="feature">
@@ -24,8 +38,8 @@ const Feature = ({ title, description, image }) => {
       </div>
       <div
         className={`feature-image ${enlarged ? 'enlarged' : ''}`}
-        onClick={() => setEnlarged(!enlarged)}
-        onMouseLeave={() => setEnlarged(false)}
+        onClick={handleImageClick}
+        ref={imageRef}
       >
         <img src={image} alt={title} />
       </div>

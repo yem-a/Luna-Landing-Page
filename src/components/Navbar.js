@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <img src={logo} alt="Prism AI logo" />
-          <h1>prism AI</h1>
+          <img src={logo} alt="Luna logo" />
+          <h1>luna</h1>
         </div>
         <ul className="navbar-menu">
           <li><button onClick={() => scrollToSection('hero')}>Home</button></li>

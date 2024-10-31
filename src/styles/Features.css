@@ -42,27 +42,26 @@
   color: #666;
 }
 
+/* Existing styles remain the same */
+
 .feature-image {
   width: 100%;
   max-width: 450px;
   height: 280px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease; /* Updated to transition transform only */
   cursor: pointer;
+  transform-origin: center center; /* Added to scale from the center */
 }
 
 .feature-image.enlarged {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  width: 80vw;
-  height: auto;
-  max-height: 80vh;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: scale(2); /* Scales the image to twice its size */
+  z-index: 1000;       /* Ensures the image stays above other elements */
 }
+
+/* Removed positioning and centering from .feature-image.enlarged */
+
 
 .feature-image img {
   width: 100%;
