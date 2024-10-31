@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Luna-Landing-Page/static/css/main.01826e05.css",
+    "main.js": "/Luna-Landing-Page/static/js/main.b96f59e2.js",
+    "static/js/453.a2c5a5f8.chunk.js": "/Luna-Landing-Page/static/js/453.a2c5a5f8.chunk.js",
+    "static/media/ai-insights.png": "/Luna-Landing-Page/static/media/ai-insights.66b2465da0e0c04ec490.png",
+    "static/media/employee-pulse.png": "/Luna-Landing-Page/static/media/employee-pulse.70d54165caa68a80cbd9.png",
+    "static/media/erp-overview.png": "/Luna-Landing-Page/static/media/erp-overview.7d6224259b80a566813e.png",
+    "static/media/analytics-dashboard.png": "/Luna-Landing-Page/static/media/analytics-dashboard.3961d2674111da95d28c.png",
+    "static/media/initiative-tracking.png": "/Luna-Landing-Page/static/media/initiative-tracking.b5ab4ad3f487700e1551.png",
+    "static/media/logo.png": "/Luna-Landing-Page/static/media/logo.981c783283666ad3a383.png",
+    "static/media/square-logo.png": "/Luna-Landing-Page/static/media/square-logo.361d1a93898484850e0b.png",
+    "static/media/google-logo.png": "/Luna-Landing-Page/static/media/google-logo.b2ab3a09160a3f1cb964.png",
+    "static/media/gs-logo.png": "/Luna-Landing-Page/static/media/gs-logo.4231c48079cd0844ff3f.png",
+    "index.html": "/Luna-Landing-Page/index.html",
+    "main.01826e05.css.map": "/Luna-Landing-Page/static/css/main.01826e05.css.map",
+    "main.b96f59e2.js.map": "/Luna-Landing-Page/static/js/main.b96f59e2.js.map",
+    "453.a2c5a5f8.chunk.js.map": "/Luna-Landing-Page/static/js/453.a2c5a5f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01826e05.css",
+    "static/js/main.b96f59e2.js"
+  ]
+}
