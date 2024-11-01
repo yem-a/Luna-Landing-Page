@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="container hero-content">
         <div className="hero-text">
           <h1>Empower Teams. Amplify Results.</h1>
-          <p>For high-growth teams: AI-driven insights to drive efficiency, team engagement, and growth.</p>
+          <p>For high-growth teams: AI-driven insights to drive value, team engagement, and adaptability.</p>
           <form onSubmit={handleSubmit}>
             <input
               type="email"
@@ -48,7 +48,11 @@ const Hero = () => {
             />
             <button type="submit">Get Early Access</button>
           </form>
-          <small>Stay updated on our progress →</small>
+          <small>
+            <a href="https://medium.com/@yemadetunji_87001/intelligent-growth-management-the-missing-framework-for-high-growth-companies-794476c8a2a5" target="_blank" rel="noopener noreferrer">
+            Learn more about what we're building →
+            </a>
+          </small>
         </div>
         <div className="hero-images">
           <img src={analyticsDashboard} alt="Analytics Dashboard" className="dashboard-image" />
@@ -63,5 +67,6 @@ const Hero = () => {
     </section>
   );
 };
+
 
 export default Hero;
