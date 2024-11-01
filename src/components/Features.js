@@ -55,17 +55,17 @@ const Features = () => {
         <div className="features-grid">
           <Feature
             title="Track initiatives with ease"
-            description="Say goodbye to scattered spreadsheets. Our platform keeps all key initiatives in one place."
+            description="Say goodbye to scattered spreadsheets and systems. Luna keeps all your key initiatives in one place."
             image={initiativeTracking}
           />
           <Feature
             title="Pulse check your team"
-            description="Get real-time insights into team morale and engagement. Address issues proactively."
+            description="Address issues proactively. Get real-time insights into team morale and engagement."
             image={employeePulse}
           />
           <Feature
             title="AI-powered insights"
-            description="Let AI crunch the numbers. Get actionable recommendations to optimize operations and drive growth."
+            description="Drive growth. Get actionable recommendations to optimize operations. Let AI crunch the numbers."
             image={aiInsights}
           />
         </div>

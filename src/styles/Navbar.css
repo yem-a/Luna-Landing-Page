@@ -70,11 +70,10 @@
   background-color: #732781;
   color: white;
   padding: 8px 16px;
-  border-radius: 20px;
 }
 
 .navbar-menu button.early-access:hover {
-  background-color: #15362a;
+  background-color: #732781;
 }
 
 @media (max-width: 768px) {
