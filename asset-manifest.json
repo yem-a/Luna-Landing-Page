@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Luna-Landing-Page/static/css/main.bdf9b82d.css",
-    "main.js": "/Luna-Landing-Page/static/js/main.b0a25eba.js",
+    "main.js": "/Luna-Landing-Page/static/js/main.95094fce.js",
     "static/js/453.a2c5a5f8.chunk.js": "/Luna-Landing-Page/static/js/453.a2c5a5f8.chunk.js",
     "static/media/ai-insights.png": "/Luna-Landing-Page/static/media/ai-insights.66b2465da0e0c04ec490.png",
     "static/media/employee-pulse.png": "/Luna-Landing-Page/static/media/employee-pulse.70d54165caa68a80cbd9.png",
@@ -14,11 +14,11 @@
     "static/media/gs-logo.png": "/Luna-Landing-Page/static/media/gs-logo.4231c48079cd0844ff3f.png",
     "index.html": "/Luna-Landing-Page/index.html",
     "main.bdf9b82d.css.map": "/Luna-Landing-Page/static/css/main.bdf9b82d.css.map",
-    "main.b0a25eba.js.map": "/Luna-Landing-Page/static/js/main.b0a25eba.js.map",
+    "main.95094fce.js.map": "/Luna-Landing-Page/static/js/main.95094fce.js.map",
     "453.a2c5a5f8.chunk.js.map": "/Luna-Landing-Page/static/js/453.a2c5a5f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bdf9b82d.css",
-    "static/js/main.b0a25eba.js"
+    "static/js/main.95094fce.js"
   ]
 }
