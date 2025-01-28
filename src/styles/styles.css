@@ -87,7 +87,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-top: 4rem; /* Increased margin-top to add more space above the features */
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -127,18 +127,12 @@ body {
 
 /* Luna Chat Styles */
 .luna-chat {
-  max-width: 100%; /* Expanded to full width */
-  margin: 0 auto 4rem auto; /* Increased margin-bottom to 4rem for more spacing */
+  max-width: 32rem;
+  margin: 0 auto;
   border: 1px solid var(--color-slate-800);
   border-radius: 0.75rem;
-  padding: 2.5rem; /* Increased padding for more prominence */
-  background-color: rgba(
-    15,
-    23,
-    42,
-    0.5
-  ); /* Slightly darker background for contrast */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  padding: 1rem;
+  background-color: rgba(15, 23, 42, 0.3);
 }
 
 .luna-header {
@@ -146,7 +140,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   color: var(--color-slate-400);
-  margin-bottom: 1.5rem; /* Increased margin-bottom for better spacing */
+  margin-bottom: 1rem;
 }
 
 .luna-status {
@@ -160,7 +154,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 2rem; /* Increased margin-bottom for better spacing */
+  margin-bottom: 1rem;
 }
 
 .luna-icon {

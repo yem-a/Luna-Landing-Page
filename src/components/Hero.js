@@ -1,72 +1,81 @@
-import React, { useState } from 'react';
-import '../styles/Hero.css';
-import analyticsDashboard from '../images/analytics-dashboard.png';
-import erpOverview from '../images/erp-overview.png';
+import React from "react";
+import { Brain, Sparkles, Rocket, Send } from "lucide-react";
+import "../styles/styles.css";
+
+const FeatureCard = ({ icon: Icon, title, description }) => (
+  <div className="feature-card">
+    <Icon className="feature-icon" />
+    <h3 className="feature-title">{title}</h3>
+    <p className="feature-description">{description}</p>
+  </div>
+);
 
 const Hero = () => {
-  const [email, setEmail] = useState('');
-  const [showThankYou, setShowThankYou] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    // Send the form data to Formspree
-    try {
-      const response = await fetch('https://formspree.io/f/xvgokalj', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email })
-      });
-
-      if (response.ok) {
-        setShowThankYou(true);
-        setEmail(''); // Clear the email input
-        setTimeout(() => setShowThankYou(false), 3000); // Hide message after 3 seconds
-      } else {
-        console.error("Form submission failed");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
+  const features = [
+    {
+      icon: Brain,
+      title: "AI-Powered Planning",
+      description: "Instant project clarity",
+    },
+    {
+      icon: Sparkles,
+      title: "Ideas to Tasks",
+      description: "Structured in seconds",
+    },
+    {
+      icon: Rocket,
+      title: "Ship Faster",
+      description: "Focus on building",
+    },
+  ];
 
   return (
-    <section className="hero" id="hero">
-      <div className="container hero-content">
-        <div className="hero-text">
-          <h1>Empower Teams. Amplify Results.</h1>
-          <p>For high-growth teams: AI-driven insights to drive value, team engagement, and adaptability.</p>
-          <form onSubmit={handleSubmit}>
+    <div className="hero-container">
+      <div className="hero-content">
+        <h1 className="hero-title">
+          Ship your projects faster - idea to execution
+          <br />
+          in minutes
+        </h1>
+        <p className="hero-subtitle">
+          For developers and product teams who want to focus on building
+        </p>
+
+        {/* Swapped: Chat box now comes before the features list */}
+        <div className="luna-chat expanded-chat">
+          <div className="luna-header">
+            <div className="luna-status"></div>
+            <span>Luna AI</span>
+          </div>
+
+          <div className="luna-message">
+            <div className="luna-icon">
+              <Sparkles />
+            </div>
+            <h3>What are you building today?</h3>
+          </div>
+
+          <div className="input-container">
             <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your work email"
-              required
+              type="text"
+              placeholder="Share your project idea..."
+              className="project-input"
             />
-            <button type="submit">Get Early Access</button>
-          </form>
-          <small>
-            <a href="https://medium.com/@yemadetunji_87001/intelligent-growth-management-the-missing-framework-for-high-growth-companies-794476c8a2a5" target="_blank" rel="noopener noreferrer">
-            Learn more about what we're building →
-            </a>
-          </small>
+            <button className="send-button">
+              <Send />
+            </button>
+          </div>
         </div>
-        <div className="hero-images">
-          <img src={analyticsDashboard} alt="Analytics Dashboard" className="dashboard-image" />
-          <img src={erpOverview} alt="ERP Overview" className="erp-image" />
+
+        {/* Features list moved below the chat box */}
+        <div className="feature-grid">
+          {features.map((feature) => (
+            <FeatureCard key={feature.title} {...feature} />
+          ))}
         </div>
       </div>
-      {showThankYou && (
-        <div className="thank-you-message">
-          Thank you for submitting. We'll let you know when we launch!
-        </div>
-      )}
-    </section>
+    </div>
   );
 };
-
 
 export default Hero;
